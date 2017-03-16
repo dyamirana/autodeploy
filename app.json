@@ -7,7 +7,9 @@
   "env": {
     "VK_TOKEN": {
       "description": "Token with all permissions(no needed if u enter the login and password)",
-      "value": ""
+      "value": "",
+      "required": false
+
     },
     "VK_LOGIN": {
       "description": "Login from VK",
