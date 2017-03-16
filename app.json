@@ -5,7 +5,7 @@
   "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/VK.com-logo.svg/2000px-VK.com-logo.svg.png",
   "keywords": ["node", "express", "static"],
   "scripts": {
-  "postdeploy": "worker python3 lolbot.py"
+  "postdeploy": "heroku run worker"
   },
   "env": {
     "VK_TOKEN": {
