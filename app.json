@@ -1,0 +1,33 @@
+{
+  "name": "Lolbot",
+  "description": "VKbot",
+  "repository": "https://github.com/heroku/node-js-sample",
+  "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/VK.com-logo.svg/2000px-VK.com-logo.svg.png",
+  "keywords": ["node", "express", "static"],
+  "env": {
+    "VK_TOKEN": {
+      "description": "Token with all permissions(no needed if u enter the login and password)",
+      "value": ""
+    },
+    "VK_LOGIN": {
+      "description": "Login from VK",
+      "value": ""
+    },
+    "VK_PASSWORD": {
+      "description": "Password from VK",
+      "value": ""
+    },
+    "PREFIX": {
+      "description": "Prefix for bot",
+      "value": ""
+    },
+    "VK_ADMIN_ID": {
+      "description": "ID of admin(without id, only numbers)",
+      "value": 183156791
+    }
+  },
+    "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-python"
+    }
+}
