@@ -4,7 +4,9 @@
   "repository": "https://github.com/dyamirana/autodeploy",
   "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/VK.com-logo.svg/2000px-VK.com-logo.svg.png",
   "keywords": ["node", "express", "static"],
-
+  "scripts": {
+  "postdeploy": "exec python worker"
+  },
   "env": {
     "VK_TOKEN": {
       "description": "Token with all permissions(no needed if u enter the login and password)",
