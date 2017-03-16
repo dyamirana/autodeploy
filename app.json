@@ -1,9 +1,12 @@
 {
   "name": "Lolbot",
   "description": "VKbot",
-  "repository": "https://github.com/heroku/node-js-sample",
+  "repository": "https://github.com/dyamirana/autodeploy",
   "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/VK.com-logo.svg/2000px-VK.com-logo.svg.png",
   "keywords": ["node", "express", "static"],
+  "scripts": {
+  "postdeploy": "worker python3 lolbot.py"
+  },
   "env": {
     "VK_TOKEN": {
       "description": "Token with all permissions(no needed if u enter the login and password)",
@@ -25,7 +28,7 @@
     },
     "VK_ADMIN_ID": {
       "description": "ID of admin(without id, only numbers)",
-      "value": 183156791
+      "value": "183156791"
     }
   },
     "buildpacks": [
