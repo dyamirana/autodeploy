@@ -1,1 +1,1 @@
-    worker: python3 lolbot.py
+    worker: python3 test.py
